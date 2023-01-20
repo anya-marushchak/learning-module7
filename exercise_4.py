@@ -1,4 +1,3 @@
-
 #create class
 class BusinessCard:
     def  __init__ (self, name, surname, company_name, position, e_mail):
@@ -20,4 +19,6 @@ list.append(BusinessCard("George V.","Glisson","Our Own Hardware","Cutting, punc
 # Accessing object value using a for loop
 for j in list:
     print(j.name, j.surname, j.company_name,j.position, j.e_mail)
+ 
+
  
