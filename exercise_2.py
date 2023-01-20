@@ -2,7 +2,6 @@ from faker import Faker
 
 faker = Faker()
 
-
 def Business_card():
     for i in range(6):
         name = faker.name()
