@@ -17,8 +17,12 @@ list.append(BusinessCard("David L.","Riemer","White Tower Hamburgers","Occupatio
 list.append(BusinessCard("George V.","Glisson","Our Own Hardware","Cutting, punching, and press machine operator","GeorgeVGlisson@rhyta.com"))
 
 # Accessing object value using a for loop
-for j in list:
-    print(j.name, j.surname, j.company_name,j.position, j.e_mail)
+
+
+def contact():
+    for j in list:
+        print(f'I am connecting to {j.name}, {j.surname}, {j.company_name},{j.position}, {j.e_mail}')
  
+contact()
 
  
