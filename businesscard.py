@@ -16,17 +16,30 @@ class BusinessContact(BaseContact):
         self.company_number = company_number
 
 
-# creating list to class BaseContact
-list_1 = []
 
-# appending instances to list
-list_1.append(BaseContact("Raymond J.","White","+48589589525","RaymondJWhite@armyspy.com"))
+
+# creating list to class BaseContact
+list_1 = BaseContact(name = "Raymond J.", surname = "White",phone_number = "+48589589525",e_mail = "RaymondJWhite@armyspy.com" )
+
 
 # creating list to class BusinessContact
-list_2 = []
+list_2 = BusinessContact(name ="Raymond J.",surname="White",phone_number="+48589589525",e_mail = "RaymondJWhite@armyspy.com",company_name = "Laura Ashley Mother & Child",position = "Administrative lead",company_number = "+48789252123")
 
-# appending instances to list
-list_2.append(BusinessContact("Raymond J.","White","+48589589525","RaymondJWhite@armyspy.com","Laura Ashley Mother & Child","Administrative lead","+48789252123"))
+
+#defining function to create fake cards
+
+from faker import Faker
+
+faker = Faker()
+
+def create_contacts():
+    for i in range(6):
+        type = faker.type
+        quantity = faker.quantity()
+       
+        print(f'{type}, {quantity}')
+
+create_contacts()
 
 # defining function to choose the neccessary card
 def contact():
@@ -41,3 +54,9 @@ def contact():
                 print(f'I am connecting to {j.name} {j.surname} number {j.company_number} .')
 
 contact()
+
+
+
+
+    
+
