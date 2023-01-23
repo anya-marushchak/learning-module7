@@ -26,15 +26,6 @@ class Series(Movies):
 def play(self, view = 1):
     self.current_viewership+=view
 
-def get_movies():
-    for movie in Movie:
-        print (movie)
-
-
-def get_series():
-    for serie in Series():
-        print (serie)
-
 def main_collection():
 
     movies = [{'name': 'The Brave Heart', 'production_year':'1995','genre':'Drama','viewership':'780'},
@@ -57,5 +48,21 @@ def main_collection():
         )
         break
 
+        
+def get_movies():
+    for movie in movies:
+        print (movie)       
 
-get_movies()             
+
+def get_series():
+    for serie in series():
+        print (serie)
+
+
+play(self, view = 1)
+
+get_movies()   
+
+get_series()  
+        
+main_collection()
