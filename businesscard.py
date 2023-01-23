@@ -16,8 +16,6 @@ class BusinessContact(BaseContact):
         self.company_number = company_number
 
 
-
-
 # creating list to class BaseContact
 list_1 = BaseContact(name = "Raymond J.", surname = "White",phone_number = "+48589589525",e_mail = "RaymondJWhite@armyspy.com" )
 
