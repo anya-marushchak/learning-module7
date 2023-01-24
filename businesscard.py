@@ -45,7 +45,7 @@ list_1 = BaseContact(name = "Raymond J.", surname = "White",phone_number = "+485
 # creating list to class BusinessContact
 list_2 = BusinessContact(name ="Raymond J.",surname="White",phone_number="+48589589525",e_mail = "RaymondJWhite@armyspy.com",type = "business contact" ,company_name = "Laura Ashley Mother & Child",position = "Administrative lead",company_number = "+48789252123" , quantity = 1)
 
-list_1 == list_2
+print(list_1 == list_2)
 
 # defining function to choose the neccessary card
 def contact():
