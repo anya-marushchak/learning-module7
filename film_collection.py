@@ -9,9 +9,9 @@ class Movies:
         # Variables
         self.current_viewership = 0
 
-#defining method calculating viewership of series
-def play(self, view = 1):
-    self.current_viewership+=view
+    #defining method calculating viewership of series
+    def play(self, view = 1):
+        self.current_viewership+=view
 
 
 class Series(Movies):
@@ -22,16 +22,16 @@ class Series(Movies):
         # Variables
         self.current_viewership = 0
 
-#defining method calculating viewership of series
-def play(self, view = 1):
-    self.current_viewership+=view
+    #defining method calculating viewership of series
+    def play(self, view = 1):
+        self.current_viewership+=view
 
-def main_collection():
+    def main_collection():
 
-    movies = [{'name': 'The Brave Heart', 'production_year':'1995','genre':'Drama','viewership':'780'},
-        {'Name': 'Pride and Prejudice', 'production_year':'2005','genre':'Melodrama','viewership':'650'},
-        {'Name': 'Lion The King', 'production_year':'2019','genre':'Adventures','viewership':'550'},
-        ]
+        movies = Movies( { name = 'The Brave Heart', production_year ='1995', genre ='Drama', viewership ='780'},
+            { name ='Pride and Prejudice', production_year = '2005','genre':'Melodrama','viewership':'650'},
+            { name = 'Lion The King', 'production_year':'2019','genre':'Adventures','viewership':'550'})
+            
 
     series = [{'name':'Friends','series_number': input() , 'season_number:': input(), 'production_year':'1992','genre':'comedy', 'viewership':'11500'},
               {'name':'Sherlok Holmes', 'series_number:':input(), 'season_number:': input(),'production_year':'2014','genre':'detective', 'viewership':'986'}]
