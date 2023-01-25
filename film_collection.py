@@ -6,10 +6,9 @@ class Movies:
         self.genre = genre
         self.viewership = viewership
 
-        # Variables
-        self.current_viewership = 0
 
-    #defining method calculating viewership of series
+    #property decorator to calculate viewership
+    @propуrty
     def play(self, view = 1):
         self.current_viewership+=view
 
@@ -26,16 +25,17 @@ class Series(Movies):
     def play(self, view = 1):
         self.current_viewership+=view
 
-    def main_collection():
 
-        movies = Movies( { name = 'The Brave Heart', production_year ='1995', genre ='Drama', viewership ='780'},
-            { name ='Pride and Prejudice', production_year = '2005','genre':'Melodrama','viewership':'650'},
-            { name = 'Lion The King', 'production_year':'2019','genre':'Adventures','viewership':'550'})
+
+movie_1 = Movies( name = 'The Brave Heart', production_year ='1995', genre ='Drama', viewership ='780')
+movie_2 = Movies( name ='Pride and Prejudice', production_year = '2005','genre':'Melodrama','viewership':'650')
+movie_3 = Movies (name = 'Lion The King', production_year='2019',genre='Adventures',viewership='550')
             
+series_1 = Series (name='Friends',series_number= input() , season_number = input(), production_year='1992',genre='comedy', viewership='11500')
+series_2 = Series (name='Sherlok Holmes', series_number=input(), season_number = input(),production_year='2014',genre='detective', viewership='986')
+series_3 = Series (name= 'Qeens gambit', series_number=input(), season_number = input(), production_year='2021', genre='drama', viewership='710') 
 
-    series = [{'name':'Friends','series_number': input() , 'season_number:': input(), 'production_year':'1992','genre':'comedy', 'viewership':'11500'},
-              {'name':'Sherlok Holmes', 'series_number:':input(), 'season_number:': input(),'production_year':'2014','genre':'detective', 'viewership':'986'}]
-    
+collecction = [movie_1, movie_2, movie_3, series_1,series_2,series_3]
 
 
     while True:    
